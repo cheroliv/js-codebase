@@ -14,7 +14,7 @@ console.assert(username === "cheroliv");
 /**
  *  Opérateur arithmétique: + - * / %
  */
-
+//integer
 var x = 10;
 var y = 5;
 var z = 20;
@@ -59,3 +59,10 @@ console.assert(x / z === 1);
 
 
 console.log("---------");
+
+
+/**
+ * Float
+ */
+var x = 2.0;
+console.log(x);
