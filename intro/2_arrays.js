@@ -69,8 +69,8 @@ const numbersString = (numberArray) => {
 };
 
 //affiche la chaine entre crochets dans la console
-const displayNumbers = (numberArray) => {
-    console.log(`[${numbersString(numberArray)}]`);
+const displayNumbers = (numbersStr) => {
+    console.log(`[${numbersString(numbersStr)}]`);
 };
 
 console.log("orginal number array")
