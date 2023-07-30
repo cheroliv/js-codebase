@@ -46,3 +46,24 @@ const letTest = () => {
 letTest();
 
 console.log("---------");
+
+/**
+ * const: declare un emplacement mémoire non réattribuable
+ * c'est modifiable pour un array,
+ * mais non réinitialisable;
+ * ex:
+ * const arr = [25, 27, 29]
+ * arr = [5, 7] //impossible
+ * arr[0]=20 // possible
+ * ex:
+ * const n = 1;
+ * n = 3; //impossible
+ */
+const arr = [25, 27, 29]
+console.log(arr);
+arr[0] = 20 // possible
+console.log(arr);
+
+arr.pop()
+console.log(arr);
+console.log("---------");
