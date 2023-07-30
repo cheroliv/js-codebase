@@ -88,3 +88,20 @@ console.log(x) //la valeur incrémenté: 21
 //incrémantation/décrémentation suffixe
 console.log(y++) //affiche la valeur sans incrémenation puis incrémente: 10
 console.log(y) //la valeur incrémenté: 11
+
+//décrémentation
+x--;
+y--;
+console.assert(x === 20);
+console.assert(y === 10);
+
+
+/**
+ * String: chaine de caractères
+ */
+console.log(`username: ${username}`);
+
+//taille de la string
+console.log(`username.length: ${username.length}`);
+console.assert(username.length === 8);
+console.assert(username.length === "cheroliv".length);
