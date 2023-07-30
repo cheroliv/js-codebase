@@ -45,14 +45,19 @@ console.assert(`${karl}, Marx (de)` === `${writers[0][0]}, ${writers[0][1]} (${w
 console.log("---------");
 
 /**
- *  Arrays: pop/push/slice/sort/shift/unshift
+ *  Arrays: map/forEach/pop/push/slice/sort/shift/unshift
  */
+
 var numbers = [1, 5, 4, 3, 2];
 
-console.log("forEach");
+console.log("Iterate with forEach");
 // parcourir avec array.forEach
 numbers.forEach((it) => console.log(it));
 
-console.log("map");
+console.log("---------");
+
+console.log("Iterate with map");
 // parcourir avec array.map
 numbers.map((it) => console.log(it));
+
+console.log("---------");
