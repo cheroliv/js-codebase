@@ -61,28 +61,56 @@ numbers.map((it) => console.log(it));
 console.log("---------");
 
 //afficher les elements sur une ligne
+const displayNumbers = (numberArray) => {
+    var consoleOutput = "[";
+    numberArray.forEach((number) => consoleOutput += `${number}, `);
+    consoleOutput = consoleOutput.substring(0, consoleOutput.length - 2);
+    consoleOutput += "]";
+    console.log(consoleOutput);
+}
 console.log("orginal number array")
-const displayNumbers = (numberArray) => {}
 displayNumbers(numbers);
 console.log("---------");
 
 
-//push
+//push: ajoute à la fin
 console.log("push");
+numbers.push(6);
+displayNumbers(numbers);
+console.log("---------");
 
-console.log("---------");
-//pop
+//pop: suprimme le dernier
 console.log("pop");
+numbers.pop();
+displayNumbers(numbers);
 console.log("---------");
-//slice
-console.log("slice");
-console.log("---------");
-//sort
-console.log("sort");
-console.log("---------");
-//shift
-console.log("shift");
-console.log("---------");
-//unshift
+
+//unshift: ajouter le parametre au debut de l'array
 console.log("unshift");
+numbers.unshift(0);
+displayNumbers(numbers);
+console.log("---------");
+
+//shift: supprime le premier element de l'array
+console.log("shift");
+numbers.shift();
+displayNumbers(numbers);
+console.log("---------");
+
+//slice: renvoi l'array entre les positions en argument
+console.log("slice");
+var sliceNumbersResult = numbers.slice(2, 4);
+displayNumbers(sliceNumbersResult);
+console.log("---------");
+
+//sort asc
+console.log("sort asc");
+var ascSort = numbers.sort((a, b) => a - b);
+displayNumbers(ascSort);
+console.log("---------");
+
+//sort desc
+console.log("sort desc");
+var descSort = numbers.sort((a, b) => b - a);
+displayNumbers(descSort);
 console.log("---------");
