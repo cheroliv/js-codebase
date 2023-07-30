@@ -25,26 +25,27 @@ sayHello("Cher", "Oliv");
 
 console.log("---------");
 
-//
-var writers = [
-    ["Karl", "Marx", "de"],
-    ["Jean-Jacques", "Rousseau", "fr"],
-    ["Victor", "Hugo", "fr"],
+var authorsArray = [
+    ["Chrétien", "de Troyes", "fr"],
+    ["François", "Rabelais", "fr"],
     ["René", "Descartes", "fr"],
+    ["Jean-Jacques", "Rousseau", "fr"],
+    ["Georg", "Hegel", "de"],
+    ["Karl", "Marx", "de"],
+    ["Friedrich", "Engels", "de"],
+    ["Victor", "Hugo", "fr"],
     ["Paul", "Verlaine", "fr"],
     ["Antonio", "Gramsci", "it"],
     ["Georg", "Lukacs", "hu"],
     ["Franz", "Kafka", "hu"],
     ["Arthur", "Rimbaud", "fr"],
     ["Gérard", "de Nerval", "fr"],
-    ["Chrétien", "de Troyes", "fr"],
-    ["François", "Rabelais", "fr"],
-    ["Georg", "Hegel", "de"],
-    ["Friedrich", "Engels", "de"],
 ]
+
+
 const displayAuthors = (authors) => authors.forEach(author =>
     console.log(`${author[0]} ${author[1]}, (${author[2]})`)
 );
-displayAuthors(writers);
+displayAuthors(authorsArray);
 
 console.log("---------");

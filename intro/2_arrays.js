@@ -53,11 +53,36 @@ var numbers = [1, 5, 4, 3, 2];
 console.log("Iterate with forEach");
 // parcourir avec array.forEach
 numbers.forEach((it) => console.log(it));
-
 console.log("---------");
 
 console.log("Iterate with map");
 // parcourir avec array.map
 numbers.map((it) => console.log(it));
+console.log("---------");
 
+//afficher les elements sur une ligne
+console.log("orginal number array")
+const displayNumbers = (numberArray) => {}
+displayNumbers(numbers);
+console.log("---------");
+
+
+//push
+console.log("push");
+
+console.log("---------");
+//pop
+console.log("pop");
+console.log("---------");
+//slice
+console.log("slice");
+console.log("---------");
+//sort
+console.log("sort");
+console.log("---------");
+//shift
+console.log("shift");
+console.log("---------");
+//unshift
+console.log("unshift");
 console.log("---------");
