@@ -25,7 +25,7 @@ sayHello("Cher", "Oliv");
 
 console.log("---------");
 
-var authorsArray = [
+var authors = [
     ["Chrétien", "de Troyes", "fr"],
     ["François", "Rabelais", "fr"],
     ["René", "Descartes", "fr"],
@@ -43,9 +43,10 @@ var authorsArray = [
 ]
 
 
-const displayAuthors = (authors) => authors.forEach(author =>
+const displayAuthors = (authorsArray) => authorsArray.forEach(author =>
     console.log(`${author[0]} ${author[1]}, (${author[2]})`)
 );
-displayAuthors(authorsArray);
+
+displayAuthors(authors);
 
 console.log("---------");
