@@ -61,11 +61,16 @@ numbers.map((it) => console.log(it));
 console.log("---------");
 
 //afficher les éléments sur une ligne
-const displayNumbers = (numberArray) => {
+//génère la string avec le formatage des nombres
+const numbersString = (numberArray) => {
     var consoleOutput = new String();
     numberArray.forEach(number => consoleOutput += `${number}, `);
-    consoleOutput = consoleOutput.substring(0, consoleOutput.length - 2);
-    console.log(`[${consoleOutput}]`);
+    return consoleOutput = consoleOutput.substring(0, consoleOutput.length - 2);
+};
+
+//affiche la chaine entre crochets dans la console
+const displayNumbers = (numberArray) => {
+    console.log(`[${numbersString(numberArray)}]`);
 };
 
 console.log("orginal number array")
