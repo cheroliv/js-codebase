@@ -42,8 +42,17 @@ writers[0][0] = karl;
 
 console.assert(`${karl}, Marx (de)` === `${writers[0][0]}, ${writers[0][1]} (${writers[0][2]})`);
 
+console.log("---------");
 
 /**
  *  Arrays: pop/push/slice/sort/shift/unshift
  */
-var numbers = [1, 5, 4, 3, 2]
+var numbers = [1, 5, 4, 3, 2];
+
+console.log("forEach");
+// parcourir avec array.forEach
+numbers.forEach((it) => console.log(it));
+
+console.log("map");
+// parcourir avec array.map
+numbers.map((it) => console.log(it));

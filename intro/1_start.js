@@ -105,3 +105,4 @@ console.log(`username: ${username}`);
 console.log(`username.length: ${username.length}`);
 console.assert(username.length === 8);
 console.assert(username.length === "cheroliv".length);
+console.log("---------");
