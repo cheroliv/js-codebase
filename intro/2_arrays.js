@@ -60,14 +60,25 @@ console.log("Iterate with map");
 numbers.map((it) => console.log(it));
 console.log("---------");
 
-//afficher les elements sur une ligne
-const displayNumbers = (numberArray) => {
+//afficher les éléments sur une ligne
+//version avec forEach
+const displayNumbersForEach = (numberArray) => {
     var consoleOutput = "[";
     numberArray.forEach((number) => consoleOutput += `${number}, `);
     consoleOutput = consoleOutput.substring(0, consoleOutput.length - 2);
     consoleOutput += "]";
     console.log(consoleOutput);
 }
+
+//version avec map
+const displayNumbers = (numberArray) => {
+    var consoleOutput = "[";
+    consoleOutput += numberArray.map((number) => `${number}, `);
+    consoleOutput = consoleOutput.substring(0, consoleOutput.length - 2);
+    consoleOutput += "]";
+    console.log(consoleOutput);
+}
+
 console.log("orginal number array")
 displayNumbers(numbers);
 console.log("---------");
