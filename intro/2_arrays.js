@@ -63,7 +63,7 @@ console.log("---------");
 //afficher les éléments sur une ligne
 const displayNumbers = (numberArray) => {
     var consoleOutput = new String();
-    numberArray.forEach((number) => consoleOutput += `${number}, `);
+    numberArray.forEach(number => consoleOutput += `${number}, `);
     consoleOutput = consoleOutput.substring(0, consoleOutput.length - 2);
     console.log(`[${consoleOutput}]`);
 };
