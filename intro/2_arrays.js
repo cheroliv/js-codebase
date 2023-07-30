@@ -60,13 +60,13 @@ console.log("Iterate with map");
 numbers.map((it) => console.log(it));
 console.log("---------");
 
-//afficher les elements sur une ligne
+//afficher les éléments sur une ligne
 const displayNumbers = (numberArray) => {
     var consoleOutput = new String();
     numberArray.forEach((number) => consoleOutput += `${number}, `);
     consoleOutput = consoleOutput.substring(0, consoleOutput.length - 2);
     console.log(`[${consoleOutput}]`);
-}
+};
 
 console.log("orginal number array")
 displayNumbers(numbers);
