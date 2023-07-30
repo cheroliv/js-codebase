@@ -1,7 +1,7 @@
 /**
  * Les objects
  */
-var authorsArray = [
+var authors = [
     ["Chrétien", "de Troyes", "fr"],
     ["François", "Rabelais", "fr"],
     ["René", "Descartes", "fr"],
@@ -19,9 +19,9 @@ var authorsArray = [
 ];
 
 var hugo = {
-    firstName: authorsArray[7][0],
-    lastName: authorsArray[7][1],
-    country: authorsArray[7][2],
+    firstName: authors[7][0],
+    lastName: authors[7][1],
+    country: authors[7][2],
 };
 
 var book = {
