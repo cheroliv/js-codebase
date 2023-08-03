@@ -21,7 +21,7 @@ var writers = [
 
 console.log(writers);
 
-// accés aux elements du tableau
+// accés aux élèments du tableau
 console.log(writers[0]);
 console.log(`${writers[0][0]}, ${writers[0][1]} (${writers[0][2]})`);
 console.assert("Karl, Marx (de)" === `${writers[0][0]}, ${writers[0][1]} (${writers[0][2]})`);
@@ -84,7 +84,7 @@ numbers.push(6);
 displayNumbers(numbers);
 console.log("---------");
 
-//pop: suprimme le dernier
+//pop: suprime le dernier
 console.log("pop");
 numbers.pop();
 displayNumbers(numbers);

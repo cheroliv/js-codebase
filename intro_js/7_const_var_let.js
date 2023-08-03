@@ -48,7 +48,7 @@ letTest();
 console.log("---------");
 
 /**
- * const: declare un emplacement mémoire non réattribuable
+ * const: déclare un emplacement mémoire non réattribuable
  * c'est modifiable pour un array,
  * mais non réinitialisable;
  * ex:
