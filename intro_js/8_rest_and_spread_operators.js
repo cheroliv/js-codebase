@@ -17,5 +17,3 @@ const min_user_age = Math.min(...user_ages);
 
 console.assert(max_user_age == 62);
 console.assert(min_user_age == 12);
-
-console.log("---------");
