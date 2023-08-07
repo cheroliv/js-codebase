@@ -48,12 +48,14 @@ console.assert(user.is_adult === is_adult);
 const [a1, a2] = [15, 25, 17, 81, 51, 46];
 console.assert(a1 === 15);
 console.assert(a2 === 25);
+
 //cible avec position par rapport aux index par virgules
 //je veux b3 à 46
 const [b1, b2, , , , b3] = [15, 25, 17, 81, 51, 46];
 console.assert(b1 === 15);
 console.assert(b2 === 25);
 console.assert(b3 === 46);
+
 //déstructuration avec operateur de rest
 // je contruit un autre avec avec les elements 
 // à partir du premier élèment non destructuré

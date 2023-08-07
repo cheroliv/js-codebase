@@ -19,7 +19,7 @@ var writers = [
     ["Friedrich", "Engels", "de"],
 ]
 
-console.log(writers);
+console.table(writers);
 
 // accés aux élèments du tableau
 console.log(writers[0]);

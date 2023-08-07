@@ -60,10 +60,10 @@ console.log("---------");
  * n = 3; //impossible
  */
 const arr = [25, 27, 29]
-console.log(arr);
+console.table(arr);
 arr[0] = 20 // possible
-console.log(arr);
+console.table(arr);
 
 arr.pop()
-console.log(arr);
+console.table(arr);
 console.log("---------");
