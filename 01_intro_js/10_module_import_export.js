@@ -28,7 +28,7 @@ import {
     times,
     div,
     rem
-} from "./math_functions.js";
+} from "./dummy_math_functions.js";
 
 console.assert(sum(1, 1) === 2);
 console.assert(minus(4, 2) === 2);
