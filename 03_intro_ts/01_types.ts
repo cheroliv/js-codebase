@@ -19,3 +19,7 @@ age = 2;
 // age="trois" c'est impossible 
 // car l'inference de type a attribué le type number
 console.assert(age === 2);
+
+// Déclaration explicite de type  
+let pi: Number = 3.14;
+console.assert(typeof pi === "number");
