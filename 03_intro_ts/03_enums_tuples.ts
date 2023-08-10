@@ -34,12 +34,12 @@ let meaning_of_the_day_fr: Meaning_of_the_day = {
     lang: "fr",
     meaning: [
         [Week.Monday, "Associé à la Lune"],
-        [Week.Tuesday,"Du dieu Tiw, associé à Mars"],
-        [Week.Wednesday,"Du dieu germanique Odin"],
-        [Week.Thursday,"Du dieu germanique du tonnerre Thor"],
-        [Week.Friday,"De la déesse germanique Frigga associée à Vénus"],
-        [Week.Saturday,"Associé à Saturne"],
-        [Week.Sunday,"Associé au Soleil"],
+        [Week.Tuesday, "Du dieu Tiw, associé à Mars"],
+        [Week.Wednesday, "Du dieu germanique Odin"],
+        [Week.Thursday, "Du dieu germanique du tonnerre Thor"],
+        [Week.Friday, "De la déesse germanique Frigga associée à Vénus"],
+        [Week.Saturday, "Associé à Saturne"],
+        [Week.Sunday, "Associé au Soleil"],
     ],
 }
 
@@ -55,12 +55,12 @@ let meaning_of_the_day_en: Meaning_of_the_day = {
     lang: "en",
     meaning: [
         [Week.Monday, "associated with the Moon"],
-        [Week.Tuesday,"from the god Tiw, associated with Mars"],
-        [Week.Wednesday,"from Germanic god Odin"],
-        [Week.Thursday,"from Germanic god of thunder Thor"],
-        [Week.Friday,"from Germanic goddess Frigga associated with Venus"],
-        [Week.Saturday,"associated with Saturn"],
-        [Week.Sunday,"associated with the Sun"],
+        [Week.Tuesday, "from the god Tiw, associated with Mars"],
+        [Week.Wednesday, "from Germanic god Odin"],
+        [Week.Thursday, "from Germanic god of thunder Thor"],
+        [Week.Friday, "from Germanic goddess Frigga associated with Venus"],
+        [Week.Saturday, "associated with Saturn"],
+        [Week.Sunday, "associated with the Sun"],
     ],
 }
 
@@ -70,6 +70,17 @@ console.log("---------");
 
 console.log("Tuples:");
 
+// Un tuple (triple)
+let monday_rank_day_meaning_triple: [
+    Number,
+    String,
+    String
+] = [
+        Week.Monday,
+        Week[Week.Monday],
+        meaning_of_the_day_fr.meaning[0][1] as String
+    ];
 
+console.table(monday_rank_day_meaning_triple);
 
 console.log("---------");
