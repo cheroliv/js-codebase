@@ -6,6 +6,7 @@
  * alors il n'est plus possible de le changer
  * lors d'une assignation
  */
+
 // Arrays
 let buddies: any[] = [
     "cheroliv",
@@ -13,6 +14,19 @@ let buddies: any[] = [
     "issoudeh",
     "soumi92"
 ]
+
+console.assert(buddies[0] === "cheroliv");
+console.assert(buddies[1] === "imrandeh");
+console.assert(buddies[2] === "issoudeh");
+console.assert(buddies[3] === "soumi92");
+// Déclaré en type any, l'inference de type 
+// a bien réaligné en type string
+console.assert(typeof buddies[0] === "string");
+console.assert(typeof buddies[1] === "string");
+console.assert(typeof buddies[2] === "string");
+console.assert(typeof buddies[3] === "string");
+
+
 
 let writers: (String | String | String | Number)[][] = [
     ["Chrétien", "de Troyes", "fr", 12],
@@ -31,7 +45,6 @@ let writers: (String | String | String | Number)[][] = [
     ["Antonio", "Gramsci", "it", 20],
 ];
 
-console.table(buddies);
 console.table(writers);
 
 
@@ -42,10 +55,22 @@ let author: {
     lang: String,
     century: Number
 } = {
-    first_name: "Antonio",
-    last_name: "Gramsci",
-    lang: "it",
-    century: 20,
+    // slice(-1) renvoie le dernier élèment
+    first_name: writers.slice(-1)[0][0] as String,
+    last_name: writers.slice(-1)[0][1] as String,
+    lang: writers.slice(-1)[0][2] as String,
+    century: writers.slice(-1)[0][3] as Number,
 }
+// assertion sur la valeur en accés par encapsulation(dot)
+console.assert(author.first_name === "Antonio")
+console.assert(author.last_name === "Gramsci")
+console.assert(author.lang === "it")
+console.assert(author.century === 20);
 
-console.table(author);
+// assertion sur le type en accès par index
+console.assert(typeof author["first_name"] === "string")
+console.assert(typeof author["last_name"] === "string")
+console.assert(typeof author["lang"] === "string")
+console.assert(typeof author["century"] === "number");
+
+console.log("---------");
