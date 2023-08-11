@@ -169,4 +169,4 @@ let motd_triple: [
 
 console.assert(motd_triple[0] === 1);
 console.assert(motd_triple[1] === "Monday");
-console.assert(motd_triple[2] === "Associé à la Lune");
+console.assert(motd_triple[2] === motd_arr_fr[0]);
