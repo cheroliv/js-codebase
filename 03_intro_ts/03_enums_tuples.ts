@@ -120,13 +120,13 @@ const test_motd = (
 let motd_fr: Meaning_of_the_day = {
     lang: "fr",
     meaning: [
-        [Week.Monday, "Associé à la Lune"],
-        [Week.Tuesday, "Du dieu Tiw, associé à Mars"],
-        [Week.Wednesday, "Du dieu germanique Odin"],
-        [Week.Thursday, "Du dieu germanique du tonnerre Thor"],
-        [Week.Friday, "De la déesse germanique Frigga associée à Vénus"],
-        [Week.Saturday, "Associé à Saturne"],
-        [Week.Sunday, "Associé au Soleil"],
+        [Week.Monday, motd_arr_fr[0]],
+        [Week.Tuesday, motd_arr_fr[1]],
+        [Week.Wednesday, motd_arr_fr[2]],
+        [Week.Thursday, motd_arr_fr[3]],
+        [Week.Friday, motd_arr_fr[4]],
+        [Week.Saturday, motd_arr_fr[5]],
+        [Week.Sunday, motd_arr_fr[6]],
     ],
 }
 
@@ -139,13 +139,13 @@ test_motd(motd_fr, motd_arr_fr)
 let motd_en: Meaning_of_the_day = {
     lang: "en",
     meaning: [
-        [Week.Monday, "associated with the Moon"],
-        [Week.Tuesday, "from the god Tiw, associated with Mars"],
-        [Week.Wednesday, "from Germanic god Odin"],
-        [Week.Thursday, "from Germanic god of thunder Thor"],
-        [Week.Friday, "from Germanic goddess Frigga associated with Venus"],
-        [Week.Saturday, "associated with Saturn"],
-        [Week.Sunday, "associated with the Sun"],
+        [Week.Monday, motd_arr_en[0]],
+        [Week.Tuesday, motd_arr_en[1]],
+        [Week.Wednesday, motd_arr_en[2]],
+        [Week.Thursday, motd_arr_en[3]],
+        [Week.Friday, motd_arr_en[4]],
+        [Week.Saturday, motd_arr_en[5]],
+        [Week.Sunday, motd_arr_en[6]],
     ],
 }
 
@@ -169,4 +169,4 @@ let motd_triple: [
 
 console.assert(motd_triple[0] === 1);
 console.assert(motd_triple[1] === "Monday");
-console.assert(motd_triple[2] === motd_arr_fr[0]);
+console.assert(motd_triple[2] === "Associé à la Lune");
