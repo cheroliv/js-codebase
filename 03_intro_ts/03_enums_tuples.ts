@@ -103,8 +103,8 @@ const display_motd = (motd: Meaning_of_the_day) => {
     )
 };
 
-//fonction d'assertion du type Meaning_of_the_day
-// afin de verifier la concordance du contenu
+//fonction d'assertion sur le type Meaning_of_the_day
+// afin de verifier la concordance du contenu avec
 // motd_arr_#lang#
 const test_motd = (
     motd: Meaning_of_the_day,
@@ -152,8 +152,8 @@ let motd_en: Meaning_of_the_day = {
 console.log("---------");
 console.log("display_motd(motd_en):");
 display_motd(motd_en);
-test_motd(motd_en, motd_arr_en);
 console.log("---------");
+test_motd(motd_en, motd_arr_en);
 
 // Un tuple (triple) utilisant le type 
 // Meaning_of_the_day pour peupler le meaning
