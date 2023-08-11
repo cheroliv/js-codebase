@@ -45,7 +45,7 @@ let writers: (String | String | String | Number)[][] = [
     ["Antonio", "Gramsci", "it", 20],
 ];
 
-console.table(writers);
+// console.table(writers);
 
 
 // Objects
@@ -61,6 +61,8 @@ let author: {
     lang: writers.slice(-1)[0][2] as String,
     century: writers.slice(-1)[0][3] as Number,
 }
+
+
 // assertion sur la valeur en accés par encapsulation(dot)
 console.assert(author.first_name === "Antonio")
 console.assert(author.last_name === "Gramsci")
@@ -72,5 +74,3 @@ console.assert(typeof author["first_name"] === "string")
 console.assert(typeof author["last_name"] === "string")
 console.assert(typeof author["lang"] === "string")
 console.assert(typeof author["century"] === "number");
-
-console.log("---------");
