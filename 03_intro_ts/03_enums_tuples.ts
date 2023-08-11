@@ -155,8 +155,8 @@ display_motd(motd_en);
 test_motd(motd_en, motd_arr_en);
 console.log("---------");
 
-// Un tuple (triple) utilisant le type Meaning_of_the_day
-// pour peupler le meaning
+// Un tuple (triple) utilisant le type 
+// Meaning_of_the_day pour peupler le meaning
 let motd_triple: [
     Number,
     String,
@@ -166,3 +166,7 @@ let motd_triple: [
         Week[Week.Monday],
         motd_fr.meaning[0][1] as String
     ];
+
+console.assert(motd_triple[0] === 1);
+console.assert(motd_triple[1] === "Monday");
+console.assert(motd_triple[2] === "Associé à la Lune");
