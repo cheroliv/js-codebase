@@ -43,6 +43,7 @@ let writers: (String | String | String | Number)[][] = [
     ["Georg", "Lukacs", "hu", 20],
     ["Franz", "Kafka", "hu", 20],
     ["Antonio", "Gramsci", "it", 20],
+    ["Domenico","Losurdo","it",20],
 ];
 
 // console.table(writers);

@@ -130,9 +130,9 @@ let motd_fr: Meaning_of_the_day = {
     ],
 }
 
-console.log("---------");
-console.log("display_motd(motd_fr):");
-display_motd(motd_fr);
+// console.log("---------");
+// console.log("display_motd(motd_fr):");
+// display_motd(motd_fr);
 test_motd(motd_fr, motd_arr_fr)
 
 
@@ -149,10 +149,10 @@ let motd_en: Meaning_of_the_day = {
     ],
 }
 
-console.log("---------");
-console.log("display_motd(motd_en):");
-display_motd(motd_en);
-console.log("---------");
+// console.log("---------");
+// console.log("display_motd(motd_en):");
+// display_motd(motd_en);
+// console.log("---------");
 test_motd(motd_en, motd_arr_en);
 
 // Un tuple (triple) utilisant le type 
